@@ -60,7 +60,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
   void Response(query) async {
     _textController.clear();
     AuthGoogle authGoogle =
-        await AuthGoogle(fileJson: "assets/BirthDayWisher-27d44bfaad84.json")
+        await AuthGoogle(fileJson: "assets/credentials.json")
             .build();
     Dialogflow dialogflow =
         Dialogflow(authGoogle: authGoogle, language: Language.english);
